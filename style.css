@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1117;
+  color: #f0f0f0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#job-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.job-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #333;
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+}
+
+.job-card a {
+  color: #7bdff2;
+  text-decoration: none;
+  font-weight: bold;
+}
